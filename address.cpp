@@ -1,0 +1,10 @@
+#include <string>
+#include "address.h"
+
+using std::string;
+
+string address::address_info()
+{
+	return address_line1 + "\n" + address_line2 + "\n"
+			 			 + city + "\n" + state + "\n" + zip;	
+}
