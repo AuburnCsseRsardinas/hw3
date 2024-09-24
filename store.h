@@ -1,5 +1,6 @@
 #include "product.h"
 #include "transaction.h"
+#include "person.h"
 
 #ifndef STORE_H
 #define STORE_H
@@ -34,7 +35,16 @@ class Store
 	int num_transactions();
 
 
+	//add a Person to the customers_[]
+	//@Person
 	bool add_customer(Person customer);
+
+	//replace a customer in the customers_[] with
+	//an updated version of same customer. Must provide
+	//index and customer to replace. Customer in parameter
+	//should match customer in that position.
+	//@int, @Person 
+	bool update_customer(int index, Person customer);
 
 	Person get_customer(int index);
 	/* Adds a single product to the products_[]
@@ -82,6 +92,10 @@ class Store
 	//string representing all transactions that belong to 
 	//a specific customer.
 	string purchase_history(Person);
+
+	//given a customer, returns the index in the customer_[]
+	//where that customer is located
+	int find_customer(Person cust);
 };
 
 #endif
