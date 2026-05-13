@@ -6,6 +6,6 @@ In this assignment, we are going to apply what we have been learning. We will be
 
 ## 📝 Instructions
 
-You can find the full instructions in multi-class-purchase-app.pdf. Remember that your program **MUST** output something on the jenkins server in order to receive **ANY** credit at all. See the instructions for more details on what your program should do and for a look at an example output.
+You can find the full instructions in multi-class-purchase-app.pdf. Remember that your program **MUST** output something on the jenkins server console in order to receive **ANY** credit at all. See the instructions for more details on what your program should do and for a look at an example output.
 
 
